@@ -71,3 +71,7 @@
 
 * For a useful [Spellchecker](https://github.com/ijmbarr/jupyterlab_spellchecker) the following extension is useful.
   *  To install run: `jupyter labextension install @ijmbarr/jupyterlab_spellchecker`
+
+# Once we are done with the tutorial...
+
+Start working through the [Altair data visualization curriculum](https://github.com/uwdata/visualization-curriculum).
