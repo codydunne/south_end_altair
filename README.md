@@ -1,6 +1,7 @@
 # South End Jupyter Lab Activity - DS 4200 F19
 
 # Setup instructions
+0. Ensure python 3 or greater is installed.
 1. Clone the repo
 2. CD to the repo directory. Create and activate a virtual environment for this project  
   * On macOS or Linux:
@@ -24,6 +25,16 @@
    
 1. Run `jupyter lab`. It should open your browser and let you select select any Jupyter Notebook .ipynb file.
 2. Run individual cells with ctrl+enter. In the menu you can run all cells and restart the kernel to clear variables.
+
+# Troubleshooting
+
+* If you have issues, the first step is to retry setting things up. 
+  1. Deactivate your venv using `deactivate`. 
+  2. Delete your `env` folder using `rm -rf env` (macOS or Linux) or `rmdir /F/Q/S env` (Windows). 
+  3. Then follow the steps above. But instead of using the `pip install -r requirements.txt` file, run `pip install jupyterlab altair altair_data_server`.
+* Students have also had trouble when using python from Anaconda, but had luck after uninstalling Anaconda and instead using [the python installer](https://www.python.org/downloads/) or [Chocolatey](https://chocolatey.org/packages?q=python).
+* For Altair problems, see [the UW Visualization Curriculum debugging guide](https://github.com/uwdata/visualization-curriculum/blob/master/altair_debugging.ipynb) and [the Altair FAQ](https://altair-viz.github.io/user_guide/faq.html).
+* Googling error messages can also help you sort out weird issues with python and jupyter lab.
 
 # Quit instructions
 1. Make sure to save your .ipynb file and shutdown Jupyter Lab properly through the file menu. Otherwise you need to use `jupyter notebook stop`.
